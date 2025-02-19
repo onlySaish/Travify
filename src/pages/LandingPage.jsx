@@ -4,6 +4,7 @@ import Hero from '../features/auth/components/Hero'
 import About from '../features/auth/components/About'
 import Video from '../features/auth/components/Video'
 import { useNavigate } from 'react-router'
+import Popup from '../features/Popup'
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ function LandingPage() {
 }
   return (
     <div className='h-screen w-full flex flex-col'>
+      <Popup/>
       <Navbar/>
       <Video/>
       <div className='max-h-1/2 flex flex-row max-w-full bg-black text-white'>
