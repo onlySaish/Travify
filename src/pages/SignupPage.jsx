@@ -4,7 +4,6 @@ import SignupStep1 from '../features/auth/components/SignupStep1';
 import SignupStep2 from '../features/auth/components/SignupStep2';
 import SignupStep3 from '../features/auth/components/SignupStep3';
 import Loader from '../features/Loader';
-import Navbar from '../features/auth/components/Navbar';
 import { useNavigate } from 'react-router';
 
 function SignUpPage() {

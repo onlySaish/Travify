@@ -13,7 +13,7 @@ function SignupStep1({ nextStep }) {
           eyeIcon.classList.remove("fa-eye-slash")
           eyeIcon.classList.add("fa-eye")
           passref.current.type = "text"
-        } else {
+        } else {  
           passref.current.type = "password"
           eyeIcon.classList.remove("fa-eye")
           eyeIcon.classList.add("fa-eye-slash")
@@ -25,7 +25,7 @@ function SignupStep1({ nextStep }) {
         if (confirmPassRef.current.type === "password"){
           eyeIcon.classList.remove("fa-eye-slash")
           eyeIcon.classList.add("fa-eye")
-          confirmPassRef.current.type = "text"
+          confirmPassRef.current.type = "text"  
         } else {
           confirmPassRef.current.type = "password"
           eyeIcon.classList.remove("fa-eye")
