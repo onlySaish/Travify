@@ -1,14 +1,12 @@
 import './App.css'
 import {RouterProvider, createBrowserRouter, createRoutesFromElements,Route} from "react-router"
-import LandingPage from './pages/LandingPage'
-import SignUpPage from './pages/SignupPage'
+import LandingPage2 from './pages/LandingPage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       {/* /Route> */}
-      <Route path='/' element={<LandingPage/>}/>
-      <Route path='/signup' element={<SignUpPage/>}/>
+      <Route path='/' element={<LandingPage2/>}/>
     </Route>
   )
 )

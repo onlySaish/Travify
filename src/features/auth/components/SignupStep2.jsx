@@ -63,12 +63,12 @@ function SignupStep2({ nextStep, userData }) {
       };
 
   return (
-    <div className='h-2/3 w-3/4 bg-black/75 flex flex-col justify-center items-center rounded-3xl lg:w-1/4 py-4'>
+    <div className='h-2/3 w-3/4 bg-white flex flex-col justify-center items-center rounded-3xl lg:w-1/4 py-4 px-4'>
     <form onSubmit={handleVerify}
     className='h-full w-full flex flex-col justify-evenly items-center'>
-    <div className='text-white text-xl font-bold md:text-4xl lg:text-3xl lg:mt-2'>CREATE ACCOUNT</div>
+    <div className='text-xl font-bold md:text-4xl lg:text-3xl lg:mt-2 mb-2'>CREATE ACCOUNT</div>
       <div className='w-11/12 px-4 py-1 font-medium'>
-        <div className='text-white text-sm px-3 md:text-xl'>Enter OTP</div>
+        <div className='text-sm px-3 md:text-xl mb-3'>Enter OTP</div>
           <div className='flex justify-center space-x-2'>
           {otp.map((digit, index) => (
         <input
@@ -79,7 +79,7 @@ function SignupStep2({ nextStep, userData }) {
             value={digit}
             onChange={(e) => handleChange(e, index)}
             onKeyDown={(e) => handleKeyDown(e, index)}
-            className='w-12 h-12 text-center text-xl border border-gray-300 rounded-md text-white'
+            className='w-12 h-12 text-center text-xl border border-gray-600 rounded-md'
         />
            ))}
           </div>

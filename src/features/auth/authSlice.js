@@ -10,6 +10,7 @@ const initialState = {
     status: 'idle',
     error: null,
     userChecked: false,
+    signupSuccess: false,
     // forgotPassActive: "Email",
     popup: {
       visible: false,
@@ -134,6 +135,7 @@ export const authSlice = createSlice({
               duration: 3000,
               type: 'success',
             };
+            state.signupSuccess = true;
           })
           .addCase(createUserAsync.rejected, (state, action) => {
             state.status = 'idle';
@@ -149,6 +151,7 @@ export const authSlice = createSlice({
 
 export const selectPopup = (state) => state.auth.popup;
 export const selectStatus = (state) => state.auth.status
+export const selectSignupStatus = (state) => state.auth.signupSuccess;
 export const { showPopup, hidePopup } = authSlice.actions;
 
 export default authSlice.reducer;
